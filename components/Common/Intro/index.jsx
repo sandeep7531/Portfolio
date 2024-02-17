@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaDownload, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaDownload, FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Contact from './Contact';
 import Download from './Download';
 import Languages from './Languages';
@@ -39,6 +39,9 @@ const Intro = () => {
         </Link>
         <Link href={SOCIAL_LINKS.LINKEDIN} target='_blank' rel='noreferrer' className=''>
           <FaLinkedin />
+        </Link>
+        <Link href={'https://wa.link/llofle'} target='_blank' rel='noreferrer' className=''>
+          <FaWhatsapp />
         </Link>
       </div>
     </>

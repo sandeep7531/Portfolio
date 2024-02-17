@@ -1,7 +1,8 @@
 import Typewriter from 'typewriter-effect';
 import BannerLayout from '../Common/BannerLayout';
 import Link from 'next/link';
-// import { Link } from 'react-scroll';
+import { FaDownload } from 'react-icons/fa';
+import Download from '../Common/Intro/Download';
 
 const Banner = () => {
     return (
@@ -30,7 +31,10 @@ const Banner = () => {
                                         </span> {"</"}<span className="text-Green sm:text-base xl:text-lg font-bold">div</span>{">"} </span>
                                 </div>
                             </div>
-                            <Link href='/background' spy={true} smooth={true} duration={500} offset={-50} className="button">Explore</Link>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+                                <Link href='/background' spy={true} smooth={true} duration={500} offset={-50} className="button">Explore</Link>
+                                <Download styles={{ padding: 0 }} icon={<FaDownload />} />
+                            </div>
                         </div>
                         <div className="w-48 h-52 relative hidden md:block">
                             <img className='absolute top-8 w-full h-full' src="images/emoji.png" alt="emoji" />
