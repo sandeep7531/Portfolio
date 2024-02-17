@@ -4,7 +4,6 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { SiUpwork } from 'react-icons/si'
 import { HiMail, HiUser } from 'react-icons/hi'
 import { BsChatTextFill } from 'react-icons/bs'
-import Fiverr_Icon from '../components/Fiverr_Icon';
 import Footer from '../components/Footer';
 import { Modal } from 'antd';
 import { CONTACTS, SOCIAL_LINKS } from '../constants/constants'
@@ -42,7 +41,7 @@ const Contact = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Linkedin:</span>
-                                <Link href={SOCIAL_LINKS.LINKEDIN}>
+                                <Link href={SOCIAL_LINKS.LINKEDIN} target='_blank'>
                                     <span className='text-LightGray text-sm'>sandeep-rai7531</span>
                                 </Link>
                             </div>
